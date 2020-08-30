@@ -1,4 +1,4 @@
-function createStore() {
+function createStore(reducer) {
   let state;
  
   function dispatch(action) {
@@ -33,6 +33,7 @@ function render() {
  
 let store = createStore();
 store.dispatch({ type: '@@INIT' });
+
 let button = document.getElementById('button');
  
 button.addEventListener('click', () => {
