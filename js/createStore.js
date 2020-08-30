@@ -1,4 +1,4 @@
-function() {
+function createStore() {
   let state;
   
   function dispatch(action) {
